@@ -4,7 +4,7 @@ export default function ClientSection() {
    return (
       <section
          id="clients"
-         className="mx-auto max-w-7xl px-6 text-center md:px-8"
+         className="mx-auto max-w-7xl dark px-6 text-center md:px-8"
       >
          <div className="py-14">
             <div className="mx-auto max-w-screen-xl px-4 md:px-8">
@@ -24,8 +24,8 @@ export default function ClientSection() {
                      </li>
                      <li>
                         <Image
-                           alt="Microsoft"
-                           src="https://cdn.nyxbui.design/companies/Microsoft.svg"
+                           alt="ASM"
+                           src="asm.svg"
                            className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
                            width={28}
                            height={8}
@@ -33,8 +33,8 @@ export default function ClientSection() {
                      </li>
                      <li>
                         <Image
-                           alt="GitHub"
-                           src="https://cdn.nyxbui.design/companies/GitHub.svg"
+                           alt="Mongodb"
+                           src="mongodb.svg"
                            className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
                            width={28}
                            height={8}
@@ -43,8 +43,8 @@ export default function ClientSection() {
 
                      <li>
                         <Image
-                           alt="Uber"
-                           src="https://cdn.nyxbui.design/companies/Uber.svg"
+                           alt="Woodland"
+                           src="woodland.svg"
                            className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
                            width={28}
                            height={8}
@@ -52,8 +52,8 @@ export default function ClientSection() {
                      </li>
                      <li>
                         <Image
-                           alt="Notion"
-                           src="https://cdn.nyxbui.design/companies/Notion.svg"
+                           alt="Woods"
+                           src="woodsshield.svg"
                            className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
                            width={28}
                            height={8}

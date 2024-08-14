@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { buttonVariants } from "./ui/button";
 import { CapconsMenu } from "./menu";
+import { CapconsLogo } from "./capcons-logo";
 
 const menuItem = [
    {
@@ -98,23 +99,21 @@ export function SiteHeader() {
 
    return (
       <>
-         <header className="animate-fade-in fixed left-0 top-0 z-50 w-full -translate-y-4 border-b opacity-0 backdrop-blur-md [--animation-delay:600ms]">
+         <header className="animate-fade-in fixed dark left-0 top-0 z-50 w-full -translate-y-4 border-b dark opacity-0 backdrop-blur-md [--animation-delay:600ms]">
             <div className="container  flex h-14 items-center justify-between">
-               <Link className="text-md flex items-center" href="/">
-                  Capcons
-               </Link>
+               <CapconsLogo />
                <div className="flex flex-1 justify-center items-center">
                   <CapconsMenu />
                </div>
 
                <div className="ml-auto hidden  md:flex h-full items-center">
-                  <Link className="mr-6 text-sm" href="/signin">
+                  <Link className="mr-6 dark text-sm" href="/login">
                      Log in
                   </Link>
                   <Link
                      className={cn(
                         buttonVariants({ variant: "secondary" }),
-                        "mr-6 text-sm"
+                        "mr-6 dark text-sm"
                      )}
                      href="/signup"
                   >
@@ -122,7 +121,7 @@ export function SiteHeader() {
                   </Link>
                </div>
                <button
-                  className="ml-6 md:hidden"
+                  className="ml-6 text-[#f4f4f4] md:hidden"
                   onClick={() => setHamburgerMenuIsOpen((open) => !open)}
                >
                   <span className="sr-only">Toggle menu</span>
@@ -137,19 +136,17 @@ export function SiteHeader() {
                variants={mobilenavbarVariant}
                animate={hamburgerMenuIsOpen ? "animate" : "exit"}
                className={cn(
-                  `bg-background/70 fixed left-0 top-0 z-50 h-screen w-full overflow-auto backdrop-blur-md `,
+                  `bg-background/70 dark fixed left-0 top-0 z-50 h-screen w-full overflow-auto backdrop-blur-md `,
                   {
                      "pointer-events-none": !hamburgerMenuIsOpen,
                   }
                )}
             >
                <div className="container flex h-14 items-center justify-between">
-                  <Link className="text-md flex items-center" href="/">
-                     Capcons
-                  </Link>
+                  <CapconsLogo />
 
                   <button
-                     className="ml-6 md:hidden"
+                     className="ml-6 text-[#f4f4f4] md:hidden"
                      onClick={() => setHamburgerMenuIsOpen((open) => !open)}
                   >
                      <span className="sr-only">Toggle menu</span>
@@ -157,7 +154,7 @@ export function SiteHeader() {
                   </button>
                </div>
                <motion.ul
-                  className="flex flex-col px-2 uppercase ease-in md:flex-row md:items-center md:normal-case"
+                  className="flex flex-col text-[#f4f4f4] px-2 uppercase ease-in md:flex-row md:items-center md:normal-case"
                   variants={containerVariants}
                   initial="initial"
                   animate={hamburgerMenuIsOpen ? "open" : "exit"}
@@ -177,21 +174,22 @@ export function SiteHeader() {
                         </Link>
                      </motion.li>
                   ))}
+                  <motion.li variants={mobileLinkVar} className="ml-auto  h-14 border-b place-content-center gap-2 w-full px-6 grid grid-cols-2">
+                     <Link className={cn(buttonVariants({ variant: "secondary" }), "cursor-pointer")} href="/login">
+                        Log in
+                     </Link>
+                     <Link
+                        className={cn(
+                           buttonVariants({ variant: "secondary" }),
+                           "  text-sm cursor-pointer"
+                        )}
+                        href="/signup"
+                     >
+                        Sign up
+                     </Link>
+                  </motion.li>
                </motion.ul>
-               <div className="ml-auto  h-14 border place-content-center gap-2 px-6 grid grid-cols-2">
-                  <Link className={cn(buttonVariants({ variant: "secondary" }), "cursor-pointer")} href="/signin">
-                     Log in
-                  </Link>
-                  <Link
-                     className={cn(
-                        buttonVariants({ variant: "secondary" }),
-                        "  text-sm cursor-pointer"
-                     )}
-                     href="/signup"
-                  >
-                     Sign up
-                  </Link>
-               </div>
+
             </motion.nav>
          </AnimatePresence>
       </>

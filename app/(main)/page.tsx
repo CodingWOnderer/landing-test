@@ -1,24 +1,30 @@
-import Features from "@/components/FeatureSection";
-import Image from "next/image";
-import { GlowCapture, Glow } from "@codaworks/react-glow";
-import { BackgroundGradientAnimation } from "@/components/Background-gradient-animation";
 import HeroSection from "@/components/hero-section";
-import Particles from "@/components/ui/particles";
 import { SphereMask } from "@/components/ui/sphere-mask";
 import ClientSection from "@/components/client-section";
+import FeatureSection from "@/components/features/FeatureSection";
+import InspirationSection from "@/components/inspiration-section";
+import AppSection from "@/components/app-section";
+import LatestInsightSection from "@/components/latest-insight-section";
+import StudioSection from "@/components/stydio-section";
 
 export default function Home() {
   return (
-    <>
+    <div className="dark">
       <HeroSection />
       <ClientSection />
       <SphereMask />
-      <Features />
-
-    </>
+      <div className="max-w-7xl mx-auto">
+        <p className=" max-w-3xl text-center mx-auto text-[#f4f4f4]">
+          CapCons allows people to have control over who they share their
+          stories and experiences with. Your stories will reach to 100% of the
+          people in your circles.
+        </p>
+      </div>
+      <FeatureSection />
+      <InspirationSection />
+      <LatestInsightSection />
+      <StudioSection />
+      <AppSection />
+    </div>
   );
 }
-
-// <main className="flex min-h-screen dark bg-background flex-col items-center justify-between md:p-24">
-
-// </main>

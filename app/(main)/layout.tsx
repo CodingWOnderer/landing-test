@@ -1,8 +1,8 @@
-import { SiteHeader } from "@/components/site-header"
-
+import Footer from "@/components/Footer";
+import { SiteHeader } from "@/components/site-header";
 
 interface MarketingLayoutProps {
-    children: React.ReactNode
+    children: React.ReactNode;
 }
 
 export default async function MarketingLayout({
@@ -11,7 +11,8 @@ export default async function MarketingLayout({
     return (
         <>
             <SiteHeader />
-            <main className="mx-auto flex-1 overflow-hidden">{children}</main>
+            <main className="mx-auto bg-[#020916] flex-1  ">{children}</main>
+            <Footer />
         </>
-    )
+    );
 }

@@ -56,31 +56,31 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function CapconsMenu() {
     return (
-        <NavigationMenu className="hidden lg:block ">
+        <NavigationMenu className="hidden  lg:block ">
             <NavigationMenuList>
-                <NavigationMenuItem>
+                <NavigationMenuItem >
                     <Link href="/brands" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
                             Brands
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/creator" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
                             Creators
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/Pricing" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <Link href="/pricing" legacyBehavior passHref>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
                             Pricing
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>Resources</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-4">
@@ -103,7 +103,7 @@ export function CapconsMenu() {
 
                             </li>
 
-                            <ListItem href="/docs" title="Blogs">
+                            <ListItem href="/blogs" title="Blogs">
                                 Insights, Ideas & latest feature launch: Your Go-To Hub for the Latest in Social
                             </ListItem>
                             <ListItem href="/docs/installation" title="Events">
@@ -125,7 +125,7 @@ export function CapconsMenu() {
 
                 <NavigationMenuItem>
                     <Link href="/about" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
                             About Us
                         </NavigationMenuLink>
                     </Link>

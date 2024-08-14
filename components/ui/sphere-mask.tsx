@@ -6,7 +6,7 @@ export function SphereMask({ reverse = false }: { reverse?: boolean }) {
          className={cn(
             // color
             '[--color:var(--color-one)]',
-            'pointer-events-none relative -z-[2] mx-auto h-[50rem] overflow-hidden',
+            'pointer-events-none relative   mx-auto h-[50rem] overflow-hidden',
 
             // sphere mask
             '[mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)]',
@@ -21,6 +21,7 @@ export function SphereMask({ reverse = false }: { reverse?: boolean }) {
             'after:bg-background after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[50%] after:border-t after:border-[hsl(var(--border))]',
          )}
       >
+
       </div>
    )
 }
