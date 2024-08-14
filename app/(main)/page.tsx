@@ -6,6 +6,7 @@ import InspirationSection from "@/components/inspiration-section";
 import AppSection from "@/components/app-section";
 import LatestInsightSection from "@/components/latest-insight-section";
 import StudioSection from "@/components/stydio-section";
+import AffiliateSection from "@/components/AffliatedSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <LatestInsightSection />
       <StudioSection />
       <AppSection />
+      <AffiliateSection />
     </div>
   );
 }

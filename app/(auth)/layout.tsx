@@ -19,8 +19,8 @@ export default function AuthLayout({
             <div className="w-full  relative lg:max-w-md">
                 {children}
                 <div className="absolute container top-4">
-                    <div className="flex justify-start px-3">
-                        <CapconsLogo className="invert " />
+                    <div className="flex justify-start -ml-2">
+                        <CapconsLogo className=" w-40" />
                     </div>
                 </div>
             </div>
