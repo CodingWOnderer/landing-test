@@ -59,7 +59,7 @@ const AuthBento = () => {
             </div>
 
             <div className="relative col-span-2 row-span-2 text-white  rounded-3xl bg-[url('/frame.png')] bg-cover border bg-no-repeat">
-                <div className=" absolute inset-0 flex items-end pb-1 justify-center">CapCons XP's</div>
+                <div className=" absolute inset-0 flex items-end pb-1 justify-center">{`CapCons XP's`}</div>
             </div>
             <div className="relative items-center text-white justify-center col-span-2 row-span-2 overflow-hidden rounded-3xl">
                 {" "}

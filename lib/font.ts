@@ -8,6 +8,6 @@ export const fontSans = FontSans({
 
 
 export const fontHeading = localFont({
-    src: "../assets/fonts/GT-Walsheim-Pro-Condensed-Medium.woff2",
+    src: "../public/fonts/GT-Walsheim-Pro-Medium.woff",
     variable: "--font-heading",
 })
