@@ -101,7 +101,7 @@ export function SiteHeader() {
       <>
          <header className="animate-fade-in fixed dark left-0 top-0 z-50 w-full -translate-y-4 border-b dark opacity-0 backdrop-blur-md [--animation-delay:600ms]">
             <div className="container  flex h-14 items-center justify-between">
-               <CapconsLogo />
+               <CapconsLogo className="-ml-4" />
                <div className="flex flex-1 justify-center items-center">
                   <CapconsMenu />
                </div>
@@ -113,7 +113,7 @@ export function SiteHeader() {
                   <Link
                      className={cn(
                         buttonVariants({ variant: "secondary" }),
-                        "mr-6 dark text-sm"
+                        " dark text-sm"
                      )}
                      href="/signup"
                   >

@@ -11,7 +11,7 @@ export function CapconsLogo({ className }: CapconsProps) {
     return (
         <Link
             className={cn(
-                "text-lg  flex space-x-1 font-bold tracking-tight  justify-center h-16 w-32 relative   text-[#f4f4f4] items-center",
+                "text-lg flex space-x-1 font-bold tracking-tight  justify-center h-16 w-32 relative   text-[#f4f4f4] items-center",
                 className
             )}
             href={"/"}

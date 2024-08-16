@@ -53,7 +53,7 @@ const MotionCarouselItem = motion(CarouselItem);
 
 function StudioSection() {
     return (
-        <div className="py-16 px-4 bg-studio-gradient">
+        <div className="py-16 px-4 bg-studiogradient">
             <div className=" max-w-7xl  mx-auto">
                 <h2 className=" text-primary text-2xl  ">
                     Our Studio: Everything You Need To Launch And Grow

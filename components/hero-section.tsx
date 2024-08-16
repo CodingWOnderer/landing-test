@@ -32,109 +32,112 @@ export default function HeroSection() {
    };
 
    return (
-      <> <section
-         id="hero"
-         className="relative  mx-auto pt-32 max-w-7xl px-6 text-center md:px-8"
-      >
-         <div className=" grid min-h-[450px] z-10 animate-fade-in lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
-            <div className=" mt-16 lg:mt-0 h-full flex flex-col justify-center lg:col-span-3">
-               <div className="flex justify-between flex-col lg:items-start">
-                  <div>
-                     <h1 className="text-3xl  lg:text-start font-bold text-white sm:text-4xl xl:text-5xl xl:leading-tight scroll-m-20">
-                        Share your stories inside
-                        your Circles
-                     </h1>
-                     <p className="lg:text-start text-center mt-4 text-base font-normal leading-7 text-gray-400   xl:pr-0 lg:pr-16    ">
-                        {/* <Balancer>
+      <>
+         {" "}
+         <section
+            id="hero"
+            className="relative  mx-auto pt-16 container px-6 text-center md:px-8"
+         >
+            <div className=" grid min-h-[450px]  z-10 animate-fade-in lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
+               <div className=" mt-16 lg:mt-0 h-full flex flex-col justify-center lg:col-span-3">
+                  <div className="flex justify-between flex-col lg:items-start">
+                     <div>
+                        <h1 className="text-3xl font-heading lg:text-start font-bold text-white sm:text-4xl xl:text-5xl xl:leading-tight scroll-m-20">
+                           Share your stories inside your Circles
+                        </h1>
+                        <p className="lg:text-start text-center mt-4 text-base font-normal leading-7 text-gray-400   xl:pr-0 lg:pr-16    ">
+                           {/* <Balancer>
                      Capcons is where stories unfold, connections are made, and
                      memories are shared. Whether you're a storyteller, a
                      listener, or somewhere in between, there's a place for you
                      in our community.
                   </Balancer> */}
 
-                        {` Capcons is where stories unfold, connections are made, and
+                           {` Capcons is where stories unfold, connections are made, and
                         memories are shared. Whether you're a storyteller, a
                         listener, or somewhere in between, there's a place for you
                         in our community.`}
-                     </p>
+                        </p>
+                     </div>
+                     <Button
+                        size={"lg"}
+                        className="mt-12 z-10 dark max-w-xs w-full lg:w-auto lg:max-w-none mx-auto lg:mx-0"
+                     >
+                        Get Started
+                     </Button>
                   </div>
-                  <Button
-                     size={"lg"}
-                     className="mt-12 z-10 dark max-w-xs w-full lg:w-auto lg:max-w-none mx-auto lg:mx-0"
-                  >
-                     Get Started
-                  </Button>
+               </div>
+               <div className=" h-full   lg:col-span-4 mt-10 lg:mt-0">
+                  <div className="h-full w-full grid grid-cols-2 grid-rows-2">
+                     <motion.div
+                        onMouseMove={(e) => onMouseMoveHandler(e)}
+                        onMouseLeave={onMouseLeaveHandler}
+                        className=" relative flex justify-center items-center"
+                     >
+                        <motion.img
+                           src={"/img1.svg"}
+                           style={{
+                              x: secondaryX,
+                              y: secondaryY,
+                           }}
+                           layout="preserve-aspect"
+                           alt="loading"
+                        />
+                     </motion.div>
+                     <motion.div
+                        onMouseMove={(e) => onMouseMoveHandler(e)}
+                        onMouseLeave={onMouseLeaveHandler}
+                        className=" relative flex justify-center items-center"
+                     >
+                        <motion.img
+                           src={"/img2.svg"}
+                           style={{
+                              x: secondaryX,
+                              y: secondaryY,
+                           }}
+                           layout="preserve-aspect"
+                           alt="loading"
+                        />
+                     </motion.div>
+                     <motion.div
+                        onMouseMove={(e) => onMouseMoveHandler(e)}
+                        onMouseLeave={onMouseLeaveHandler}
+                        className=" relative flex justify-center items-center"
+                     >
+                        <motion.img
+                           src={"/img3.svg"}
+                           style={{
+                              x: secondaryX,
+                              y: secondaryY,
+                           }}
+                           layout="preserve-aspect"
+                           alt="loading"
+                        />
+                     </motion.div>
+
+                     <motion.div
+                        onMouseMove={(e) => onMouseMoveHandler(e)}
+                        onMouseLeave={onMouseLeaveHandler}
+                        className=" relative flex justify-center items-center"
+                     >
+                        <motion.img
+                           src={"/img4.svg"}
+                           style={{
+                              x: secondaryX,
+                              y: secondaryY,
+                           }}
+                           className="rounded-full   cursor-pointer "
+                           layout="preserve-aspect"
+                           alt="loading"
+                        />
+                     </motion.div>
+                  </div>
                </div>
             </div>
-            <div className=" h-full   lg:col-span-4 mt-10 lg:mt-0">
-               <div className="h-full w-full grid grid-cols-2 grid-rows-2">
 
-                  <motion.div
-                     onMouseMove={(e) => onMouseMoveHandler(e)}
-                     onMouseLeave={onMouseLeaveHandler}
-                     className=" relative flex justify-center items-center"
-                  >
-                     <motion.img
-                        src={"/img1.svg"}
-                        style={{
-                           x: secondaryX,
-                           y: secondaryY,
-                        }}
-                        layout="preserve-aspect"
-                        alt="loading"
-                     />
-                  </motion.div>
-                  <motion.div
-                     onMouseMove={(e) => onMouseMoveHandler(e)}
-                     onMouseLeave={onMouseLeaveHandler}
-                     className=" relative flex justify-center items-center"
-                  >
-                     <motion.img
-                        src={"/img2.svg"}
-                        style={{
-                           x: secondaryX,
-                           y: secondaryY,
-                        }}
-                        layout="preserve-aspect"
-                        alt="loading"
-                     />
-                  </motion.div>
-                  <motion.div onMouseMove={(e) => onMouseMoveHandler(e)}
-                     onMouseLeave={onMouseLeaveHandler} className=" relative flex justify-center items-center">
-                     <motion.img
-                        src={"/img3.svg"}
-                        style={{
-                           x: secondaryX,
-                           y: secondaryY,
-                        }}
-                        layout="preserve-aspect"
-                        alt="loading"
-                     />
-                  </motion.div>
+            {/**Laptop */}
 
-                  <motion.div
-                     onMouseMove={(e) => onMouseMoveHandler(e)}
-                     onMouseLeave={onMouseLeaveHandler}
-                     className=" relative flex justify-center items-center"
-                  >
-                     <motion.img
-                        src={"/img4.svg"}
-                        style={{
-                           x: secondaryX,
-                           y: secondaryY,
-                        }}
-                        className="rounded-full   cursor-pointer "
-                        layout="preserve-aspect"
-                        alt="loading"
-                     />
-                  </motion.div>
-               </div>
-            </div>
-         </div>
-
-         {/**Laptop */}
-
-         {/* <div
+            {/* <div
       ref={ref}
       className="animate-fade-up mt-24 relative  opacity-0 [--animation-delay:400ms] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]"
    >
@@ -167,7 +170,7 @@ export default function HeroSection() {
          </div>
       </div>
    </div> */}
-      </section>
+         </section>
          <Particles
             className="absolute inset-0 "
             quantity={200}
@@ -175,7 +178,8 @@ export default function HeroSection() {
             size={0.05}
             staticity={40}
             color="#ffffff"
-         /></>
+         />
+      </>
    );
 }
 // bg-[#020916]

@@ -17,27 +17,27 @@ export default function ClientSection() {
                         <Image
                            alt="Google"
                            src="https://cdn.nyxbui.design/companies/Google.svg"
-                           className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-                           width={28}
-                           height={8}
+                           className="h-10 w-32 px-2 dark:brightness-0 dark:invert"
+                           width={32}
+                           height={10}
                         />
                      </li>
                      <li>
                         <Image
                            alt="ASM"
                            src="asm.svg"
-                           className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-                           width={28}
-                           height={8}
+                           className="h-10 w-32 px-2 dark:brightness-0 dark:invert"
+                           width={32}
+                           height={10}
                         />
                      </li>
                      <li>
                         <Image
                            alt="Mongodb"
                            src="mongodb.svg"
-                           className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-                           width={28}
-                           height={8}
+                           className="h-10 w-32 px-2 dark:brightness-0 dark:invert"
+                           width={32}
+                           height={10}
                         />
                      </li>
 
@@ -45,18 +45,18 @@ export default function ClientSection() {
                         <Image
                            alt="Woodland"
                            src="woodland.svg"
-                           className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-                           width={28}
-                           height={8}
+                           className="h-10 w-32 px-2 dark:brightness-0 dark:invert"
+                           width={32}
+                           height={10}
                         />
                      </li>
                      <li>
                         <Image
                            alt="Woods"
                            src="woodsshield.svg"
-                           className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-                           width={28}
-                           height={8}
+                           className="h-10 w-32 px-2 dark:brightness-0 dark:invert"
+                           width={32}
+                           height={10}
                         />
                      </li>
                   </ul>

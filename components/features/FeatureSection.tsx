@@ -46,7 +46,7 @@ const FeatureSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                     viewport={{ once: true }}
-                    className=" text-2xl text-[#f4f4f4]"
+                    className=" text-2xl font-heading text-[#f4f4f4]"
                 >
                     Discover What Sets Us Apart
                 </motion.h2>

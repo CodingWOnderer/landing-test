@@ -13,14 +13,14 @@ const config = {
   prefix: "",
   theme: {
     backgroundImage: {
-      'custom-gradient': 'linear-gradient(160deg, #FFFE0E 0%, #F4E61C 12.62%, #DEC710 28.05%, #D79E13 50.47%, #D17F18 73.38%)',
-      'bento-gradient': 'linear-gradient(137deg, #3655AA 30%, #7C2262 97.84%)',
+      'customgradient': 'linear-gradient(160deg, #FFFE0E 0%, #F4E61C 12.62%, #DEC710 28.05%, #D79E13 50.47%, #D17F18 73.38%)',
+      'bentogradient': 'linear-gradient(137deg, #3655AA 30%, #7C2262 97.84%)',
       'bento2-background': 'linear-gradient(136deg, #4F3B66 3.82%, #191826 95.33%)',
       "inspire1": "linear-gradient(140deg, #FEFCF4 6.72%, #FDF4F7 40.18%, #FFFCFC 61.16%);",
       "inspire2": "linear-gradient(140deg, #F8FAFC 6.72%, #D4E6FF 43.18%, #FFFCFC 91.16%);",
       "inspire3": "linear-gradient(140deg, #FAF8DC 6.72%, rgba(184, 191, 217, 0.50) 43.18%, #FFFCFC 91.16%);",
       "inspire1-radial": "radial-gradient(circle 300px at center}, #FFE2E9, hsla(0, 0%, 0%, 0)",
-      "studio-gradient": "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,219,240,1) 100%);",
+      "studiogradient": "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,219,240,1) 100%);",
       "carouselcard": "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)",
     },
     container: {
@@ -33,6 +33,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
+        heading: ["var(--font-heading)", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",

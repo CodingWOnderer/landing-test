@@ -101,18 +101,18 @@ const InspirationSection = () => {
                         >
                             <Card
                                 key={id}
-                                className={`aspect-square flex flex-col justify-between ${bgClass} border-neutral-200 relative`}
+                                className={`aspect-square  flex flex-col justify-between ${bgClass} border-neutral-200 relative`}
                             >
                                 {gradient && (
-                                    <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-800/30  via-transparent to-transparent inset-0 absolute"></div>
+                                    <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-800/20  via-pink-800/10 to-transparent inset-0 absolute"></div>
                                 )}
                                 <CardHeader>
                                     <CardTitle className="sr-only">Card Title</CardTitle>
-                                    <CardDescription>{description}</CardDescription>
+                                    <CardDescription className="text-justify text-[#363737]">{description}</CardDescription>
                                 </CardHeader>
                                 <CardFooter className="flex justify-center">
                                     <div className="flex flex-col items-center">
-                                        <Avatar className="h-12 w-12">
+                                        <Avatar className="h-20 w-20">
                                             <AvatarImage src={avatarSrc} />
                                             <AvatarFallback>{avatarFallback}</AvatarFallback>
                                         </Avatar>
