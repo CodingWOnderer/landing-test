@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { siteConfig } from "@/config/site";
-import { fontHeading, fontSans } from "@/lib/font";
+import { fontSans } from "@/lib/font";
 
 
 
@@ -91,8 +91,7 @@ export default function RootLayout({
       <body
         className={cn(
           "bg-background min-h-screen font-sans antialiased",
-          fontSans.className,
-          fontHeading.variable
+          fontSans.className
         )}
       >
         <ThemeProvider
