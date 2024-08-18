@@ -99,7 +99,7 @@ export function SiteHeader() {
 
    return (
       <>
-         <header className="animate-fade-in fixed dark left-0 top-0 z-50 w-full -translate-y-4 border-b dark opacity-0 backdrop-blur-md [--animation-delay:600ms]">
+         <header className="animate-fade-in bg-background fixed dark left-0 top-0 z-50 w-full -translate-y-4 border-b dark opacity-0 backdrop-blur-md [--animation-delay:600ms]">
             <div className="container  flex h-14 items-center justify-between">
                <CapconsLogo className="-ml-4" />
                <div className="flex flex-1 justify-center items-center">

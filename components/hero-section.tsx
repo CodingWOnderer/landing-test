@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { Button } from "./ui/button";
 import Particles from "./ui/particles";
 import { useParallax } from "@/hooks/useParallax";
+import { Typography } from "./typography";
 
 export default function HeroSection() {
    const ref = useRef(null);
@@ -42,22 +43,24 @@ export default function HeroSection() {
                <div className=" mt-16 lg:mt-0 h-full flex flex-col justify-center lg:col-span-3">
                   <div className="flex justify-between flex-col lg:items-start">
                      <div>
-                        <h1 className="text-3xl font-heading lg:text-start font-bold text-white sm:text-4xl xl:text-5xl xl:leading-tight scroll-m-20">
+                        <Typography
+                           as={"h1"}
+                           variant={"h1"}
+                           className="dark text-foreground lg:text-start"
+                        >
                            Share your stories inside your Circles
-                        </h1>
-                        <p className="lg:text-start text-center mt-4 text-base font-normal leading-7 text-gray-400   xl:pr-0 lg:pr-16    ">
-                           {/* <Balancer>
-                     Capcons is where stories unfold, connections are made, and
-                     memories are shared. Whether you're a storyteller, a
-                     listener, or somewhere in between, there's a place for you
-                     in our community.
-                  </Balancer> */}
+                        </Typography>
 
+                        <Typography
+                           as={"p"}
+                           variant={"p"}
+                           className="lg:text-start text-center text-gray-400"
+                        >
                            {` Capcons is where stories unfold, connections are made, and
                         memories are shared. Whether you're a storyteller, a
                         listener, or somewhere in between, there's a place for you
                         in our community.`}
-                        </p>
+                        </Typography>
                      </div>
                      <Button
                         size={"lg"}

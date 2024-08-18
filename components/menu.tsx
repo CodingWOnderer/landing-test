@@ -66,7 +66,7 @@ export function CapconsMenu() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/creator" legacyBehavior passHref>
+                    <Link href="/creators" legacyBehavior passHref>
                         <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
                             Creators
                         </NavigationMenuLink>
@@ -106,13 +106,13 @@ export function CapconsMenu() {
                             <ListItem href="/blogs" title="Blogs">
                                 Insights, Ideas & latest feature launch: Your Go-To Hub for the Latest in Social
                             </ListItem>
-                            <ListItem href="/docs/installation" title="Events">
+                            <ListItem href="/events" title="Events">
                                 Learn, Engage, Excel: Your Gateway to know partners, team at CapCons
                             </ListItem>
                             <ListItem href="/docs/primitives/typography" title="How to videos">
                                 Steps-by-Steps guide to community creation
                             </ListItem>
-                            <ListItem href="/docs/primitives/typography" title="Stormnorms">
+                            <ListItem href="/stormnorms" title="Stormnorms">
                                 Contest that celebrate creators
                             </ListItem>
                             <div className="col-span-2 grid gap-x-2 grid-cols-2">

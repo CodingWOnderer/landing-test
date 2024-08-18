@@ -8,6 +8,11 @@ const nextConfig = {
         hostname: "images.pexels.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname:"assets.capcons.com",
+        pathname: "/**",
+      }
     ],
   },
 };
