@@ -11,7 +11,7 @@ export function TopFeaturesSection() {
             </Typography>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {TopFeatures.map((feature, index) => (
-                    <Card className=" bg-secondary rounded">
+                    <Card key={index} className=" bg-secondary rounded">
                         <CardHeader>
                             <CardTitle>
                                 <div className="flex items-center mb-4 gap-4">
