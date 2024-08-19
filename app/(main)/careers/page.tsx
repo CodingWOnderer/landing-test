@@ -1,10 +1,6 @@
 import { CapconsCareerSection } from "@/components/capcons-career-job";
 import { JoinCapConsSection } from "@/components/capcons-description";
-import { WithErrorImage } from "@/components/common/fallback-image";
 import { FeaturedJobSection } from "@/components/deatured-job-section";
-import { Typography } from "@/components/typography";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { GetConvertedUrl } from "@/utils/Images";
 import React from "react";
 

@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 import {
     NavigationMenu,
@@ -13,8 +13,8 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { Button } from "./ui/button"
+} from "@/components/ui/navigation-menu";
+import { Button, buttonVariants } from "./ui/button";
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -52,35 +52,45 @@ const components: { title: string; href: string; description: string }[] = [
         description:
             "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
     },
-]
+];
 
 export function CapconsMenu() {
     return (
         <NavigationMenu className="hidden  lg:block ">
             <NavigationMenuList>
-                <NavigationMenuItem >
+                <NavigationMenuItem>
                     <Link href="/brands" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
+                        <NavigationMenuLink
+                            className={cn(navigationMenuTriggerStyle(), "text-[#f4f4f4]")}
+                        >
                             Brands
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/creators" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
+                        <NavigationMenuLink
+                            className={cn(navigationMenuTriggerStyle(), "text-[#f4f4f4]")}
+                        >
                             Creators
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <Link href="/pricing" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
+                        <NavigationMenuLink
+                            className={cn(navigationMenuTriggerStyle(), "text-[#f4f4f4]")}
+                        >
                             Pricing
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>Resources</NavigationMenuTrigger>
+                    <NavigationMenuTrigger
+                        className={cn(navigationMenuTriggerStyle(), "text-[#f4f4f4]")}
+                    >
+                        Resources
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-4">
@@ -99,17 +109,20 @@ export function CapconsMenu() {
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
-
-
                             </li>
 
                             <ListItem href="/blogs" title="Blogs">
-                                Insights, Ideas & latest feature launch: Your Go-To Hub for the Latest in Social
+                                Insights, Ideas & latest feature launch: Your Go-To Hub for the
+                                Latest in Social
                             </ListItem>
                             <ListItem href="/events" title="Events">
-                                Learn, Engage, Excel: Your Gateway to know partners, team at CapCons
+                                Learn, Engage, Excel: Your Gateway to know partners, team at
+                                CapCons
                             </ListItem>
-                            <ListItem href="/docs/primitives/typography" title="How to videos">
+                            <ListItem
+                                href="/docs/primitives/typography"
+                                title="How to videos"
+                            >
                                 Steps-by-Steps guide to community creation
                             </ListItem>
                             <ListItem href="/stormnorms" title="Stormnorms">
@@ -117,7 +130,12 @@ export function CapconsMenu() {
                             </ListItem>
                             <div className="col-span-2 grid gap-x-2 grid-cols-2">
                                 <Button>Book a demo</Button>
-                                <Button>Contact us</Button>
+                                <Link
+                                    href={"/contact"}
+                                    className={cn(buttonVariants({ variant: "default" }))}
+                                >
+                                    Contact us
+                                </Link>
                             </div>
                         </ul>
                     </NavigationMenuContent>
@@ -125,14 +143,16 @@ export function CapconsMenu() {
 
                 <NavigationMenuItem>
                     <Link href="/about" legacyBehavior passHref>
-                        <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'text-[#f4f4f4]')}>
+                        <NavigationMenuLink
+                            className={cn(navigationMenuTriggerStyle(), "text-[#f4f4f4]")}
+                        >
                             About Us
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
-    )
+    );
 }
 
 const ListItem = React.forwardRef<
@@ -157,6 +177,6 @@ const ListItem = React.forwardRef<
                 </a>
             </NavigationMenuLink>
         </li>
-    )
-})
-ListItem.displayName = "ListItem"
+    );
+});
+ListItem.displayName = "ListItem";
