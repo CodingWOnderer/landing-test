@@ -16,6 +16,7 @@ import { CalendarIcon, SearchIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { events } from "@/lib/mocks";
 import { motion } from "framer-motion";
+import { GetConvertedUrl } from "@/utils/Images";
 
 const tags = [
     "Comedy Shows",
@@ -67,10 +68,13 @@ const EventsSearch = () => {
         <div>
             {" "}
             {/* Search Section */}
-            <motion.div initial={{ opacity: 0, translateY: 40 }}
+            <motion.div
+                initial={{ opacity: 0, translateY: 40 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
-                transition={{ ease: "easeIn", delay: 0.2, duration: 0.5, }}
-                viewport={{ once: true }} className="flex justify-center relative bottom-12">
+                transition={{ ease: "easeIn", delay: 0.2, duration: 0.5 }}
+                viewport={{ once: true }}
+                className="flex justify-center relative bottom-12"
+            >
                 <div className="mt-6 bg-[#FFF] rounded-lg shadow-lg p-8 w-[90vw] flex-col md:flex-row flex justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
                     <Input
                         type="text"
@@ -137,12 +141,23 @@ const EventsSearch = () => {
                 {filteredEvents.length ? (
                     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:block">
                         {filteredEvents.map((event, index) => (
-                            <EventsCard key={index} />
+                            <EventsCard
+                                key={index}
+                                href={`${event.id}?src=${GetConvertedUrl(event.imageUrl)}`}
+                                imageUrl={GetConvertedUrl(event.imageUrl)}
+                                imageAlt={event.title}
+                                badgeText={event.category}
+                                title={event.title}
+                                description={event.description}
+                                location={event.location}
+                                time={event.time}
+                                price={event.price}
+
+                            />
                         ))}
                     </div>
                 ) : (
                     <div className=" h-[300px] text-foreground flex justify-center items-center">
-
                         <Typography as={"h3"} variant={"h3"}>
                             No Event
                         </Typography>

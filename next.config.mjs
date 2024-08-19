@@ -12,6 +12,11 @@ const nextConfig = {
         protocol: "https",
         hostname:"assets.capcons.com",
         pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname:"placehold.co",
+        pathname: "/**",
       }
     ],
   },
