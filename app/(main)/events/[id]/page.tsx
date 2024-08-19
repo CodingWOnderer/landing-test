@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Eye, Heart, Share2 } from "lucide-react";
 import { events } from "@/lib/mocks";
 import { EventsCard } from "@/components/events-card";
-import { motion } from "framer-motion";
 import { ArtistsSection } from "@/components/artists-section";
 import { SponsoredBySection } from "@/components/sponsored-section";
 import { DescriptionSection } from "@/components/event-description";

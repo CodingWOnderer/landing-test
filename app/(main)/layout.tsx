@@ -11,7 +11,7 @@ export default async function MarketingLayout({
     return (
         <>
             <SiteHeader />
-            <main className="mx-auto bg-[#020916] flex-1  ">{children}</main>
+            <main className="mx-auto bg-[#020916] dark flex-1  ">{children}</main>
             <Footer />
         </>
     );
